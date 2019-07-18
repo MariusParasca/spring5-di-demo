@@ -7,8 +7,11 @@ import guru.springframework.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"guru.services", "guru.springframework.controllers"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
